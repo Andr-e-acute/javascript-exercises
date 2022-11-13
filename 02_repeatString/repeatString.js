@@ -1,7 +1,8 @@
-const repeatString = function(string,repeatAmount) {
-    if(repeatAmount<0){return 'ERROR'}
+const repeatString = function(string,times) {
+    
+    if(amounts<0){return 'ERROR'}
     let repeatedString=""
-    for (let index = 0; index < repeatAmount ; index++) {
+    for (let index = 0; index < amounts ; index++) {
         repeatedString+=string
         
     }
