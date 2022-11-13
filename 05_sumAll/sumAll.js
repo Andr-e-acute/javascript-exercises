@@ -1,6 +1,6 @@
 const sumAll = function (...numbers) {
   if([...numbers].some((number)=>{
-    return number<0||(typeof number !== 'number')
+    return number<0||!Number.isInteger(number)
   })){
     return "ERROR"
   }
