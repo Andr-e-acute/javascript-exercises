@@ -27,13 +27,14 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num) {
-	let result =1;
-  for (let i = 1; i <= num; i++) {
-    result = result*i;  
-  }
-  return result
+if(num==0){
+  return 1
+}
+else{
+  return num * factorial(num-1)
+}
 };
-// is this the recusrion branch
+
 // Do not edit below this line
 module.exports = {
   add,
